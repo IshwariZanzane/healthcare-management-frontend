@@ -1,0 +1,170 @@
+.patient-page {
+    padding: 28px 32px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.page-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.page-subtitle {
+    color: var(--text-muted);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.btn-add {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-add:hover { background: var(--primary-dark); }
+
+.table-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.table-toolbar {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+.total-count {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.patient-table th {
+    background: #EEF2FF;
+    color: var(--primary-dark);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.patient-table td {
+    padding: 13px 16px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    font-size: 14px;
+}
+
+.patient-table tbody tr:last-child td { border-bottom: none; }
+
+.patient-table tbody tr:hover { background: #F5F8FF; }
+
+.name-cell {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.blood-badge {
+    background: #E3F2FD;
+    color: var(--primary-dark);
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.state-msg {
+    padding: 32px;
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.state-msg.error { color: var(--danger); }
+
+.empty-msg {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 32px;
+}
+
+.btn-view {
+    background: #E3F2FD;
+    border: none;
+    color: var(--primary);
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.btn-view:hover {
+    background: var(--primary);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn-edit {
+    background: #FFF8E1;
+    border: none;
+    color: #F57F17;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.btn-edit:hover {
+    background: #F57F17;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn-delete {
+    background: #FFEBEE;
+    border: none;
+    color: #C62828;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.btn-delete:hover {
+    background: #C62828;
+    color: #fff;
+    transform: scale(1.1);
+}

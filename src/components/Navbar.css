@@ -1,0 +1,79 @@
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:64px;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    gap: 40px;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.brand-icon{font-size: 22px;}
+
+
+.brand-name{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;;
+}
+.navbar-links{
+    display: flex;
+    list-style: none;
+    gap:4px;
+    flex:1;
+}
+.nav-link {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.admin-badge {
+  background: var(--accent);
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+.logout-btn {
+    background: transparent;
+    color: rgba(255,255,255,0.85);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.logout-btn:hover {
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+}

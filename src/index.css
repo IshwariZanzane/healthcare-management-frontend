@@ -1,13 +1,31 @@
-body {
+*, *::before,* *::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+} 
+:root{
+    --primary:        #1565C0;
+  --primary-dark:   #0D47A1;
+  --primary-light:  #1E88E5;
+  --accent:         #00ACC1;
+  --bg:             #F0F4F8;
+  --surface:        #FFFFFF;
+  --border:         #CFD8DC;
+  --text:           #1A2B3C;
+  --text-muted:     #607D8B;
+  --danger:         #E53935;
+  --success:        #2E7D32;
+  --radius:         8px;
+  --shadow:         0 2px 8px rgba(21, 101, 192, 0.10);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Segoe UI',Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
+
+button {cursor: pointer; font-family: inherit;}
+input, select, textarea {font-family: inherit;}
