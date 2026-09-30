@@ -64,7 +64,7 @@ function DoctorFormModal({ onClose, onDoctorAdded, onDoctorUpdated, doctor }) {
         <div className="modal-overlay">
             <div className="modal">
                 <div className="modal-header">
-                    <h3>{isEdit ? 'Edit Doctor' : 'Add New Doctor'}</h3>
+                    <h3 data-icon="👨‍⚕️">{isEdit ? 'Edit Doctor' : 'Add New Doctor'}</h3>
                     <button className="close-btn" onClick={onClose}>✕</button>
                 </div>
                 <form onSubmit={handleSubmit} className="patient-form">
@@ -73,12 +73,12 @@ function DoctorFormModal({ onClose, onDoctorAdded, onDoctorUpdated, doctor }) {
                             <p className="form-section-label">Login Credentials</p>
                             <div className="form-row">
                                 <div className="form-group">
-                                    <label>Email</label>
-                                    <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="doctor@ayulekha.com" required />
+                                    <label htmlFor="demail">Email</label>
+                                    <input id="demail" name="email" type="email" value={form.email} onChange={handleChange} placeholder="doctor@ayulekha.com" required />
                                 </div>
                                 <div className="form-group">
-                                    <label>Password</label>
-                                    <input name="password" type="password" value={form.password} onChange={handleChange} placeholder="Set password" required />
+                                    <label htmlFor="dpassword">Password</label>
+                                    <input id="dpassword" name="password" type="password" value={form.password} onChange={handleChange} placeholder="Set password" required />
                                 </div>
                             </div>
                         </>
@@ -86,27 +86,27 @@ function DoctorFormModal({ onClose, onDoctorAdded, onDoctorUpdated, doctor }) {
                     <p className="form-section-label">Doctor Info</p>
                     <div className="form-row">
                         <div className="form-group">
-                            <label>Full Name</label>
-                            <input name="name" value={form.name} onChange={handleChange} placeholder="Dr. John Smith" required />
+                            <label htmlFor="dname">Full Name</label>
+                            <input id="dname" name="name" value={form.name} onChange={handleChange} placeholder="Dr. John Smith" required />
                         </div>
                         <div className="form-group">
-                            <label>Mobile No</label>
-                            <input name="mobileNo" value={form.mobileNo} onChange={handleChange} placeholder="9876543210" required />
+                            <label htmlFor="dmobileNo">Mobile No</label>
+                            <input id="dmobileNo" name="mobileNo" value={form.mobileNo} onChange={handleChange} placeholder="9876543210" required />
                         </div>
                     </div>
                     <div className="form-row">
                         <div className="form-group">
-                            <label>Department</label>
-                            <input name="department" value={form.department} onChange={handleChange} placeholder="Cardiology" required />
+                            <label htmlFor="department">Department</label>
+                            <input id="department" name="department" value={form.department} onChange={handleChange} placeholder="Cardiology" required />
                         </div>
                         <div className="form-group">
-                            <label>Speciality</label>
-                            <input name="speciality" value={form.speciality} onChange={handleChange} placeholder="Heart Surgery" required />
+                            <label htmlFor="speciality">Speciality</label>
+                            <input id="speciality" name="speciality" value={form.speciality} onChange={handleChange} placeholder="Heart Surgery" required />
                         </div>
                     </div>
                     <div className="form-group full-width">
-                        <label>Education</label>
-                        <input name="education" value={form.education} onChange={handleChange} placeholder="MBBS, MD" required />
+                        <label htmlFor="education">Education</label>
+                        <input id="education" name="education" value={form.education} onChange={handleChange} placeholder="MBBS, MD" required />
                     </div>
                     {error && <p className="form-error">{error}</p>}
                     <div className="form-actions">

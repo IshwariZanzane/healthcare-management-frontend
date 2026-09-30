@@ -45,36 +45,36 @@ function AddPatientForm({ onClose, onPatientAdded, onPatientUpdated, patient }) 
         <div className="modal-overlay">
             <div className="modal">
                 <div className="modal-header">
-                    <h3>{isEdit ? 'Edit Patient' : 'Add New Patient'}</h3>
+                    <h3 data-icon="👤">{isEdit ? 'Edit Patient' : 'Add New Patient'}</h3>
                     <button className="close-btn" onClick={onClose}>✕</button>
                 </div>
                 <form onSubmit={handleSubmit} className="patient-form">
                     <p className="form-section-label">Personal Info</p>
                     <div className="form-row">
                         <div className="form-group">
-                            <label>Full Name</label>
-                            <input name="name" value={form.name} onChange={handleChange} placeholder="Enter full name" required />
+                            <label htmlFor="name">Full Name</label>
+                            <input id="name" name="name" value={form.name} onChange={handleChange} placeholder="Enter full name" required />
                         </div>
                         <div className="form-group">
-                            <label>Email</label>
-                            <input name="email" type="email" value={form.email} onChange={handleChange} placeholder="Enter email" required />
+                            <label htmlFor="email">Email</label>
+                            <input id="email" name="email" type="email" value={form.email} onChange={handleChange} placeholder="Enter email" required />
                         </div>
                     </div>
                     <div className="form-row">
                         <div className="form-group">
-                            <label>Mobile No</label>
-                            <input name="mobileNo" value={form.mobileNo} onChange={handleChange} placeholder="Enter mobile number" required />
+                            <label htmlFor="mobileNo">Mobile No</label>
+                            <input id="mobileNo" name="mobileNo" value={form.mobileNo} onChange={handleChange} placeholder="Enter mobile number" required />
                         </div>
                         <div className="form-group">
-                            <label>Birth Date</label>
-                            <input name="birthDate" type="date" value={form.birthDate} onChange={handleChange} required />
+                            <label htmlFor="birthDate">Birth Date</label>
+                            <input id="birthDate" name="birthDate" type="date" value={form.birthDate} onChange={handleChange} required />
                         </div>
                     </div>
                     <p className="form-section-label">Medical Info</p>
                     <div className="form-row">
                         <div className="form-group">
-                            <label>Gender</label>
-                            <select name="gender" value={form.gender} onChange={handleChange} required>
+                            <label htmlFor="gender">Gender</label>
+                            <select id="gender" name="gender" value={form.gender} onChange={handleChange} required>
                                 <option value="">Select gender</option>
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
@@ -82,8 +82,8 @@ function AddPatientForm({ onClose, onPatientAdded, onPatientUpdated, patient }) 
                             </select>
                         </div>
                         <div className="form-group">
-                            <label>Blood Group</label>
-                            <select name="bloodGroup" value={form.bloodGroup} onChange={handleChange} required>
+                            <label htmlFor="bloodGroup">Blood Group</label>
+                            <select id="bloodGroup" name="bloodGroup" value={form.bloodGroup} onChange={handleChange} required>
                                 <option value="">Select blood group</option>
                                 {bloodGroups.map(bg => (
                                     <option key={bg} value={bg}>{bg}</option>
@@ -92,8 +92,8 @@ function AddPatientForm({ onClose, onPatientAdded, onPatientUpdated, patient }) 
                         </div>
                     </div>
                     <div className="form-group full-width">
-                        <label>Address</label>
-                        <textarea name="address" value={form.address} onChange={handleChange} placeholder="Enter address" rows={3} required />
+                        <label htmlFor="address">Address</label>
+                        <textarea id="address" name="address" value={form.address} onChange={handleChange} placeholder="Enter address" rows={3} required />
                     </div>
                     {error && <p className="form-error">{error}</p>}
                     <div className="form-actions">

@@ -1,31 +1,37 @@
-*, *::before,* *::after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-} 
-:root{
-    --primary:        #1565C0;
+}
+
+:root {
+  --primary:        #1565C0;
   --primary-dark:   #0D47A1;
   --primary-light:  #1E88E5;
   --accent:         #00ACC1;
-  --bg:             #F0F4F8;
+  --bg:             #EEF2F7;
   --surface:        #FFFFFF;
-  --border:         #CFD8DC;
+  --border:         #DDE3EC;
   --text:           #1A2B3C;
   --text-muted:     #607D8B;
   --danger:         #E53935;
   --success:        #2E7D32;
-  --radius:         8px;
-  --shadow:         0 2px 8px rgba(21, 101, 192, 0.10);
+  --radius:         10px;
+  --shadow:         0 4px 16px rgba(21, 101, 192, 0.10);
+  --shadow-hover:   0 8px 24px rgba(21, 101, 192, 0.16);
 }
 
-body{
-  font-family: 'Segoe UI',Roboto, sans-serif;
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
   background: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 20% 20%, rgba(21, 101, 192, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(0, 172, 193, 0.05) 0%, transparent 60%);
+  background-attachment: fixed;
   color: var(--text);
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
 }
 
-button {cursor: pointer; font-family: inherit;}
-input, select, textarea {font-family: inherit;}
+button { cursor: pointer; font-family: inherit; }
+input, select, textarea { font-family: inherit; }
