@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import PatientList from './pages/patients/PatientList';
 import DoctorList from './pages/doctors/DoctorList';
 import AppointmentList from './pages/appointments/AppointmentList';
+import VisitList from './pages/visits/VisitList';
 import LoginPage from './pages/auth/LoginPage';
 import CreateUserPage from './pages/auth/CreateUserPage';
 import './App.css';
@@ -31,6 +32,7 @@ function App() {
                                                 </PrivateRoute>
                                             } />
                                             <Route path="/appointments" element={<AppointmentList />} />
+                                            <Route path="/visits" element={<VisitList />} />
                                         </Routes>
                                     </div>
                                 </div>
