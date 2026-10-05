@@ -50,9 +50,9 @@ function VisitList() {
                             <tr>
                                 <th>#</th>
                                 <th>Visit Time</th>
-                                <th>Patient ID</th>
-                                <th>Doctor ID</th>
-                                <th>Appt ID</th>
+                                <th>Patient</th>
+                                <th>Doctor</th>
+                                <th>Token</th>
                                 <th>Weight</th>
                                 <th>Height</th>
                                 <th>BP</th>
@@ -68,9 +68,9 @@ function VisitList() {
                                     <tr key={v.visitId}>
                                         <td>{index + 1}</td>
                                         <td>{formatDateTime(v.visitTime)}</td>
-                                        <td>{v.patientId}</td>
-                                        <td>{v.doctorId}</td>
-                                        <td>{v.appointmentId}</td>
+                                        <td>{v.patientName}</td>
+                                        <td>{v.doctorName}</td>
+                                        <td>#{v.tokenNumber}</td>
                                         <td>{v.weight ? `${v.weight} kg` : '-'}</td>
                                         <td>{v.height ? `${v.height} cm` : '-'}</td>
                                         <td>{v.bloodPressure || '-'}</td>
